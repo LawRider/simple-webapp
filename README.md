@@ -18,7 +18,7 @@ This is used in the demonstration of development of Ansible Playbooks.
     # Ubuntu
     apt-get install -y python python-setuptools python-dev build-essential python-pip python-mysqldb
     # Centos
-    yum install -y python3
+    yum install -y python3 python3-pip
 
 ## 2. Install and Configure Database
     
