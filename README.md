@@ -14,15 +14,20 @@ This is used in the demonstration of development of Ansible Playbooks.
 ## 1. Install all required dependencies
   
   Python and its dependencies
-
+  
+    # Ubuntu
     apt-get install -y python python-setuptools python-dev build-essential python-pip python-mysqldb
+    # Centos
+    yum install -y python3
 
-   
 ## 2. Install and Configure Database
     
  Install MySQL database
     
+    # Ubuntu
     apt-get install -y mysql-server mysql-client
+    # Centos
+    yum install -y mariadb-server mysql
 
 ## 3. Start Database Service
   - Start the database service
@@ -46,8 +51,8 @@ This is used in the demonstration of development of Ansible Playbooks.
 
 Install Python Flask dependency
 
-    pip install flask
-    pip install flask-mysql
+    pip3 install flask
+    pip3 install flask-mysql
 
 - Copy app.py or download it from source repository
 - Configure database credentials and parameters 
