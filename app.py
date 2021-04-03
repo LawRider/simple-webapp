@@ -1,7 +1,6 @@
 import os
 from flask import Flask
-from flaskext.mysql import MySQL      # For newer versions of flask-mysql 
-# from flask.ext.mysql import MySQL   # For older versions of flask-mysql
+from flaskext.mysql import MySQL
 app = Flask(__name__)
 
 mysql = MySQL()
@@ -39,4 +38,5 @@ def read():
     return ",".join(result)
 
 if __name__ == "__main__":
-    app.run()
+#    app.run()
+    app.run(host = '0.0.0.0')
