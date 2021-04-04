@@ -22,7 +22,7 @@ This is used in the demonstration of development of Ansible Playbooks.
 
 ## 2. Install and Configure Database
     
- Install MySQL database
+ Install MySQL/MariaDB
     
     # Ubuntu
     apt-get install -y mysql-server mysql-client
